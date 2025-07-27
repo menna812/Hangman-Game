@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--included google fonts as well as bootstrap-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!--included icon from box icon-->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css"> <!--External css-->
+</head>
+<body>
+    <div class="container"> <!--that will contain the whole page-->
+        <div class="title">   <!--That will contain the title of the game-->
+            <h1>The<span> Hangman</span> Game </h1>
+        </div>
+        <div class="alert hidden">
+            <p class="alertp"></p>
+            <button class="icon"><i class='bxr  bx-refresh-ccw-alt'  ></i>  </button>
+        </div>
+        <div class="gameContainer">
+            <div class="pictures">    <!--That will contain the picture-->
+                <img src="./images/hangman-0.svg" alt="">
+            </div>
+            <div class="guess">
+                <p class="hint">
+                    <span>Hint: </span><span class="hint-text"></span>
+                </p>
+                <p><span>Incorrect Guesses: </span><span class="Incorrect"></span></p>
+                <div class="underscores">  <!--The division that will contain the underscores for guessing-->
+                    <h2>_ _ _ _</h2>
+                </div>
+                <div class="keyboard">   <!--That will contain the 26 alphabets to choose from-->
+                    <button type="button" class="btn btn-primary">a</button>
+                    <button type="button" class="btn btn-primary">b</button>
+                    <button type="button" class="btn btn-primary">c</button>
+                    <button type="button" class="btn btn-primary">d</button>
+                    <button type="button" class="btn btn-primary">e</button>
+                    <button type="button" class="btn btn-primary">f</button>
+                    <button type="button" class="btn btn-primary">g</button>
+                    <button type="button" class="btn btn-primary">h</button>
+                    <button type="button" class="btn btn-primary">i</button>
+                    <button type="button" class="btn btn-primary">j</button>
+                    <button type="button" class="btn btn-primary">k</button>
+                    <button type="button" class="btn btn-primary">l</button>
+                    <button type="button" class="btn btn-primary">m</button>
+                    <button type="button" class="btn btn-primary">n</button>
+                    <button type="button" class="btn btn-primary">o</button>
+                    <button type="button" class="btn btn-primary">p</button>
+                    <button type="button" class="btn btn-primary">q</button>
+                    <button type="button" class="btn btn-primary">r</button>
+                    <button type="button" class="btn btn-primary">s</button>
+                    <button type="button" class="btn btn-primary">t</button>
+                    <button type="button" class="btn btn-primary">u</button>
+                    <button type="button" class="btn btn-primary">v</button>
+                    <button type="button" class="btn btn-primary">w</button>
+                    <button type="button" class="btn btn-primary">x</button>
+                    <button type="button" class="btn btn-primary">y</button>
+                    <button type="button" class="btn btn-primary">z</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--changed to type module to make it use import and export -->
+    <script type="module" src="index.js"></script> <!--to link it to js file-->
+</body>
+</html>
