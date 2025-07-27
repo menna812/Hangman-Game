@@ -1,6 +1,6 @@
 # 🎯 Hangman Game
 
-A fun and interactive Hangman game built using **HTML**, **CSS**, and **JavaScript**. The player guesses letters to uncover a hidden word based on a given hint. The game ends when the player either guesses all letters correctly or makes too many wrong guesses (with each wrong guess the picture of the hangman updates).
+A Hangman game built using **HTML**, **CSS**, and **JavaScript**. The player guesses letters to uncover a hidden word based on a given hint. The game ends when the player either guesses all letters correctly or makes too many wrong guesses (with each wrong guess the picture of the hangman updates).
 
 ---
 
